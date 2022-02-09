@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  config: |
+    ConfigRepo: ssh://git@github.com/weaveworks-gitops-test/test-app-yeqbzcgf.git
+    FluxNamespace: firefly
+    WegoNamespace: firefly
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: weave-gitops-config
+  namespace: firefly

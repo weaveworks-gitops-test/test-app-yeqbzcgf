@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: kind-test-my-cluster-user
+  namespace: firefly
+spec:
+  interval: 1m0s
+  path: ./.weave-gitops/clusters/kind-test-my-cluster/user
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: wego-auto-github-test-app-yeqbzcgf
+

@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-auto-github-test-app-yeqbzcgf
+  namespace: firefly
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  url: https://github.com/weaveworks-gitops-test/test-app-yeqbzcgf.git
+
